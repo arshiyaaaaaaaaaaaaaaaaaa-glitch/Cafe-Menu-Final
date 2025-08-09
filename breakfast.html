@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>منوی صبحانه</title>
+<style>
+  :root {
+    --dark-green: #023020;
+    --light-green: #d0e6d0;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--light-green),
+        var(--light-green) 20px,
+        var(--dark-green) 20px,
+        var(--dark-green) 40px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        var(--light-green),
+        var(--light-green) 20px,
+        var(--dark-green) 20px,
+        var(--dark-green) 40px
+      );
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  header {
+    background-color: var(--dark-green);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+  }
+
+  header .back-btn {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .menu-list {
+    padding: 15px;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .item-name {
+    text-align: right;
+  }
+
+  .item-price {
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="back-btn" onclick="window.location.href='index.html'">⬅</div>
+  <h1>منوی صبحانه</h1>
+</header>
+
+<div class="menu-list">
+  <div class="menu-item"><span class="item-name">املت</span><span class="item-price">45 T</span></div>
+  <div class="menu-item"><span class="item-name">نیمرو</span><span class="item-price">40 T</span></div>
+  <div class="menu-item"><span class="item-name">صبحانه انگلیسی</span><span class="item-price">85 T</span></div>
+  <div class="menu-item"><span class="item-name">پنکیک</span><span class="item-price">60 T</span></div>
+  <div class="menu-item"><span class="item-name">فرنج‌تست</span><span class="item-price">55 T</span></div>
+  <div class="menu-item"><span class="item-name">عدسی</span><span class="item-price">35 T</span></div>
+  <div class="menu-item"><span class="item-name">حلیم</span><span class="item-price">50 T</span></div>
+  <div class="menu-item"><span class="item-name">شکلات داغ</span><span class="item-price">35 T</span></div>
+  <div class="menu-item"><span class="item-name">چای</span><span class="item-price">20 T</span></div>
+  <div class="menu-item"><span class="item-name">آب پرتقال</span><span class="item-price">30 T</span></div>
+</div>
+
+</body>
+</html>
